@@ -1169,6 +1169,13 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
+  (global_label "V_BATT" (shape input) (at 91.44 59.69 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 8eaf5709-7f62-41e4-ab66-1c81e5574e66)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 82.1842 59.69 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
   (global_label "V_BATT" (shape input) (at 166.37 24.13 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid a10359bc-a410-455a-b947-6643d987c5fb)
@@ -1219,46 +1226,6 @@
   (hierarchical_label "ENC_B1" (shape output) (at 184.15 139.7 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid dd38df51-5f15-41ba-a9f9-1f3df6ccabfc)
-  )
-
-  (symbol (lib_id "power:+3.3V") (at 91.44 59.69 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 0293ae9c-17d8-4924-b703-532ab1956c8e)
-    (property "Reference" "#PWR023" (at 91.44 63.5 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3.3V" (at 91.821 55.2958 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 91.44 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 91.44 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid ef61b37d-03f6-4d34-985a-bef0e11313e7))
-    (instances
-      (project "Line Tracer esp32"
-        (path "/281576c8-91a4-4828-9354-28c2f0a7e0e1/2542813a-b579-46cd-a0ba-c42901f79ac0"
-          (reference "#PWR023") (unit 1)
-        )
-      )
-      (project "Line Tracer"
-        (path "/2a1b4233-452a-404a-b933-88db3980ebb0/00000000-0000-0000-0000-000060ad1081"
-          (reference "#PWR076") (unit 1)
-        )
-      )
-      (project "Line Tracer F405RGT"
-        (path "/357df1bf-2fc8-4b26-bb86-5825f7b69aa9/00ff0f66-961d-4039-a1b9-9d9b8fb39bcb"
-          (reference "#PWR058") (unit 1)
-        )
-      )
-      (project "Line Tracer RP2040"
-        (path "/8c28d176-22ae-4483-9f62-5231c94718f1/d2751592-a077-484e-a0f8-daca799779d7"
-          (reference "#PWR0301") (unit 1)
-        )
-      )
-    )
   )
 
   (symbol (lib_id "power:GND") (at 91.44 91.44 0) (unit 1)
